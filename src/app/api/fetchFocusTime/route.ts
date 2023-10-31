@@ -1,6 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse, NextRequest } from "next/server";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest, res: NextResponse) {
   const API_URL = `https://www.rescuetime.com/anapi/daily_summary_feed?key=${process.env.NEXT_PUBLIC_RESCUE_TIME_API_KEY}`;
 
   try {
@@ -12,12 +12,15 @@ export async function GET(req: NextApiRequest, res: NextApiResponse) {
 
     if (apiRes.ok) {
       const data: any = await apiRes.json();
-      return Response.json({ data });
+      return NextResponse.json({ data });
     } else {
-      res.status(apiRes.status).json({ error: "Failed to fetch data" });
+      return NextResponse.json(
+        { message: "Operation failed" },
+        { status: 500 }
+      );
     }
   } catch (error: any) {
     console.error("Error fetching data:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    return NextResponse.json({ message: "Operation failed" }, { status: 500 });
   }
 }

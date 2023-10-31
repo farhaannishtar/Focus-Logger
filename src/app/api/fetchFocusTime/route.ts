@@ -11,7 +11,8 @@ export async function GET(req: NextRequest, res: NextResponse) {
     });
 
     if (apiRes.ok) {
-      const data: any = await apiRes.json();
+      let data: any = await apiRes.json();
+      data = data[0].very_productive_duration_formatted;
       return NextResponse.json({ data });
     } else {
       return NextResponse.json(

@@ -10,7 +10,7 @@ const FocusTime: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         console.log(data);
-        setFocusTime(data.data[0].very_productive_duration_formatted)
+        setFocusTime(data.data)
       } else {
         console.error('Failed to fetch data:', response.status, response.statusText);
       }

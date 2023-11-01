@@ -3,7 +3,6 @@ import { NextResponse, NextRequest } from "next/server";
 export async function POST(req: NextRequest, res: NextResponse) {
   const body = await req.json();
   const { key, duration } = body;
-  const url = `https://www.rescuetime.com/anapi/start_focustime?key=${key}&duration=${duration}`;
 
   try {
     const response = await fetch(

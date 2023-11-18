@@ -1,4 +1,4 @@
-![IMG_3598](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/2cf0d9ec-c3d1-43cc-a947-00dd429a0c30)### Overview
+## Overview 
 Focus Logger is a backend service designed to integrate with RescueTime, enabling users to log their focus periods through a simple POST request. This service is easily accessible via an Apple Shortcut, streamlining the tracking of productive time.
 
 ## Features
@@ -39,10 +39,7 @@ Configure the Apple Shortcut to connect with the backend service.
 Create these Apple Shortcuts.
 
 
-
-
 ## Usage
 To log a focus period:
-
-Activate the Apple Shortcut.
-The backend service will create a POST request to RescueTime, logging the focus period.
+Activate the Apple Shortcut (with a voice command or on the shortcuts app).
+The backend service will create a POST request to RescueTime, creating / discontinuing the focus session.

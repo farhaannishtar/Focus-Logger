@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![IMG_3598](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/2cf0d9ec-c3d1-43cc-a947-00dd429a0c30)### Overview
+Focus Logger is a backend service designed to integrate with RescueTime, enabling users to log their focus periods through a simple POST request. This service is easily accessible via an Apple Shortcut, streamlining the tracking of productive time.
+
+## Features
+Seamless Integration: Connects directly with RescueTime's API.
+Apple Shortcut Support: Start or end focus periods with a single tap.
+Automated Logging: Automatically logs each focus session into RescueTime.
 
 ## Getting Started
+Prerequisites
+A RescueTime account.
+Apple device with Shortcuts app installed.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Installation
+Clone the repository:
+bash
+```
+git clone https://github.com/farhaannishtar/Focus-Logger
+```
+Navigate to the project directory:
+```
+cd focus-logger-rescuetime
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Start Focus Session
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![IMG_3598](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/c2c220ea-4721-42db-9d30-94dae148e9f4)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Stop Focus Session
 
-To learn more about Next.js, take a look at the following resources:
+![IMG_6420](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/2f1eac7c-f22c-41a7-a12e-1d65479c7a1e)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuration
+Obtain your RescueTime API key from RescueTime API settings.
+Configure the Apple Shortcut to connect with the backend service.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Create these Apple Shortcuts.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Usage
+To log a focus period:
+
+Activate the Apple Shortcut.
+The backend service will create a POST request to RescueTime, logging the focus period.

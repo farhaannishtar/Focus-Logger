@@ -7,7 +7,7 @@ Apple Shortcut Support: Start or end focus periods with a single tap.
 Automated Logging: Automatically logs each focus session into RescueTime.
 
 ## Getting Started
-Prerequisites
+Prerequisites:
 A RescueTime account.
 Apple device with Shortcuts app installed.
 
@@ -21,27 +21,29 @@ Navigate to the project directory:
 ```
 cd focus-logger-rescuetime
 npm i
+npm run dev
 ```
-
-# Copy these Apple shortcuts on your apple device.
-
-### Start Focus Session
-
-![IMG_3598](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/c2c220ea-4721-42db-9d30-94dae148e9f4)
-
-
-### Stop Focus Session
-
-![IMG_6420](https://github.com/farhaannishtar/Focus-Logger/assets/89179469/2f1eac7c-f22c-41a7-a12e-1d65479c7a1e)
 
 ## Configuration
 Obtain your RescueTime API key from RescueTime API settings.
 Configure the Apple Shortcut to connect with the backend service.
 
-Create these Apple Shortcuts.
+
+## Copy these Apple shortcuts to your apple device.
+
+### Start Focus Session
+
+<img width="350" alt="Screenshot 2023-11-18 at 5 52 42 PM" src="https://github.com/farhaannishtar/Focus-Logger/assets/89179469/7e56969f-7062-4796-bfc1-bcee77e4ec0f">
+
+
+
+### Stop Focus Session
+
+<img width="346" alt="Screenshot 2023-11-18 at 5 53 45 PM" src="https://github.com/farhaannishtar/Focus-Logger/assets/89179469/f6d97dbc-852f-405c-92a7-44bbec00a097">
+
 
 
 ## Usage
 To log a focus period:
-Activate the Apple Shortcut (with a voice command or on the shortcuts app).
-The backend service will create a POST request to RescueTime, creating / discontinuing the focus session.
+Activate the Apple Shortcut with a voice command or via shortcuts app.
+The backend service will create a POST request to RescueTime, creating / discontinuing a focus session.

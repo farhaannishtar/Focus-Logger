@@ -6,7 +6,7 @@ const StartFocus: React.FC = () => {
 
   async function startFocusTime() {
     try {
-      const response = await fetch('/api/triggerFocusSession', {
+      const response = await fetch('/api/triggerFocusSessionStart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

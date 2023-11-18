@@ -33,14 +33,12 @@ Configure the Apple Shortcut to connect with the backend service.
 
 ### Start Focus Session
 
-<img width="350" alt="Screenshot 2023-11-18 at 5 52 42 PM" src="https://github.com/farhaannishtar/Focus-Logger/assets/89179469/7e56969f-7062-4796-bfc1-bcee77e4ec0f">
-
+<img width="354" alt="Screenshot 2023-11-18 at 5 57 01 PM" src="https://github.com/farhaannishtar/Focus-Logger/assets/89179469/436c3332-1f85-415b-b453-f763260a4837">
 
 
 ### Stop Focus Session
 
 <img width="346" alt="Screenshot 2023-11-18 at 5 53 45 PM" src="https://github.com/farhaannishtar/Focus-Logger/assets/89179469/f6d97dbc-852f-405c-92a7-44bbec00a097">
-
 
 
 ## Usage

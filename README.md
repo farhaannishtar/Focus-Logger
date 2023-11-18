@@ -1,5 +1,5 @@
 ## Overview 
-Focus Logger is a backend service designed to integrate with [RescueTime][(https://www.rescuetime.com/)], enabling users to log their focus periods through a simple POST request. This service is easily accessible via an Apple Shortcut, streamlining the tracking of productive time.
+Focus Logger is a backend service designed to integrate with [RescueTime](https://www.rescuetime.com/), enabling users to log their focus periods through a simple POST request. This service is easily accessible via an Apple Shortcut, streamlining the tracking of productive time.
 
 ## Features
 Seamless Integration: Connects directly with RescueTime's API.
